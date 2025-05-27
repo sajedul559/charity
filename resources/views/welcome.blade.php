@@ -58,8 +58,8 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-user"></i> Md Juwel</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>juwelmd416@gmail.com</a></li>
+                                    <li><a href="#"> <i class="fa fa-user"></i>Sajedul Islam</a></li>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i>sajedulkhairul@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -765,10 +765,10 @@
                                 Contacts
                             </h3>
                             <div class="contacts">
-                                <p>0123456789 <br>
-                                    juwelmd416@gmail.com <br>
-                                    Flat 20, Paharikha Society,
-                                    Chittagong, Bangaldesh
+                                <p>01882632239 <br>
+                                    sajedulkhairul@gmail.com <br>
+                                    Raipura, Narsingdi,
+                                    Dhaka, Bangaldesh
                                 </p>
                             </div>
                         </div>
@@ -824,7 +824,7 @@
                                 <script>
                                     document.write(new Date().getFullYear());
                                 </script>
-                                    Md Juwel
+                                    Sajedul Islam
                             </p>
                         </p>
                     </div>
