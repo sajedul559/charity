@@ -221,65 +221,64 @@
     <!-- counter_area_end  -->
 
     {{-- body --}}
-    <div class="container-fluid mt-5 mb-5 bg-indigo-100">
-        <div class="row mx-5">
-            <div class="col-md-4">
-                <div class="card" style="width: 25rem;">
-                    <img src="img/volunteer.jpg" class="card-img-top" style="width: 25rem;" alt="...">
-                    <div class="card-body">
-                        <a href="{{url('volunteer')}}" class="card-text btn btn-outline-success">Volunteer</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card" style="width: 25rem;">
-                    <img src="img/event.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="{{url('events')}}" class="card-text btn btn-outline-success">Events</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card" style="width: 25rem;">
-                    <img src="img/camp.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="" class="card-text btn btn-outline-success">Campaigns</a>
-                    </div>
+   <div class="container-fluid mt-5 mb-5 bg-indigo-100">
+    <div class="row gx-4 gy-4 mx-3">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="img/volunteer.jpg" class="card-img-top" alt="Volunteer">
+                <div class="card-body d-flex justify-content-center">
+                    <a href="{{ url('volunteer') }}" class="btn btn-outline-success">Volunteer</a>
                 </div>
             </div>
         </div>
 
-        <div class="row my-5 mx-5">
-            <div class="col-md-4">
-                <div class="card" style="width: 25rem;">
-                    <img src="img/sdg.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="" class="card-text btn btn-outline-success">SDG's Goals</a>
-                    </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="img/event.jpg" class="card-img-top" alt="Events">
+                <div class="card-body d-flex justify-content-center">
+                    <a href="{{ url('events') }}" class="btn btn-outline-success">Events</a>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-4">
-                <div class="card" style="width: 25rem;">
-                    <img src="img/auction.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="" class="card-text btn btn-outline-success">Auction History</a>
-                    </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="img/camp.jpg" class="card-img-top" alt="Campaigns">
+                <div class="card-body d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-success">Campaigns</a>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-4">
-                <div class="card" style="width: 25rem;">
-                    <img src="img/ngo.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="" class="card-text btn btn-outline-success">NGO's</a>
-                    </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="img/sdg.jpg" class="card-img-top" alt="SDG Goals">
+                <div class="card-body d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-success">SDG's Goals</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="img/auction.jpg" class="card-img-top" alt="Auction History">
+                <div class="card-body d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-success">Auction History</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="img/ngo.jpg" class="card-img-top" alt="NGOs">
+                <div class="card-body d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-success">NGO's</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <div class="container">
         <div class="row mt-5">
@@ -370,7 +369,7 @@
     <!-- reson_area_end  -->
 
     {{-- Sponser Ship --}}
-    <div class="container-fluid mb-5">
+    {{-- <div class="container-fluid mb-5">
         <div class="row">
             <div class="col-md-12">
                 <div class="card bg-dark text-white">
@@ -421,7 +420,56 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+    <div class="container-fluid mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card bg-dark text-white">
+                <img class="card-img img_opacity" src="{{ asset('img/Sponsr.jpg')}}" alt="Card image">
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                    <p class="card-text sponsr_text text-gray-900 fs-2 fw-bold mt-5">Supported People</p>
+                    <p class="card-text text-dark fw-light fs-5 px-3">
+                        There is nothing more beautiful than someone who goes out of their way to make life beautiful for others
+                    </p>
+
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 mt-4">
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/spn1.png" class="card-img-top" alt="Sponsor 1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/spn2.png" class="card-img-top" alt="Sponsor 2">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/spn3.png" class="card-img-top" alt="Sponsor 3">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/spn4.png" class="card-img-top" alt="Sponsor 4">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/spn5.png" class="card-img-top" alt="Sponsor 5">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="img/spn5.png" class="card-img-top" alt="Sponsor 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
 
     {{-- Home Blog --}}
     <div class="container my-5  ">
