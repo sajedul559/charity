@@ -59,8 +59,8 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-users"></i>Md Juwel</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>juwelmd416@gmail.com</a></li>
+                                    <li><a href="#"> <i class="fa fa-users"></i>Sajedul Islam</a></li>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i>sajedulkhairul@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -252,10 +252,10 @@
                                 Contacts
                             </h3>
                             <div class="contacts">
-                                <p>018xxxxxxx <br>
-                                    juwelmd416@gmail.com <br>
-                                    Flat 20, Paharikha Society,
-                                    Chittagong, Bangaldesh
+                                <p>01882632239 <br>
+                                    sajedulkhairul@gmail.com <br>
+                                    Raipura, Narsingdi,
+                                    Dhaka, Bangaldesh
                                 </p>
                             </div>
                         </div>
@@ -306,12 +306,12 @@
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <p class="text-center ">
-                                Copyright &copy;
+                           <p class="text-center ">
+                                Copyright &copy; 
                                 <script>
                                     document.write(new Date().getFullYear());
-
                                 </script>
+                                    Sajedul Islam
                             </p>
                         </p>
                     </div>

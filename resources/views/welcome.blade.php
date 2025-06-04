@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Charity</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -144,25 +144,25 @@
     </header>
 
     {{-- image slideer --}}
-    <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="slider_text ">
-                            <span>Get Started Today.</span>
-                            <h3> Help the children
-                                When They Need</h3>
-                            <p>With so much to consume and such little time, coming up <br>
-                                with relevant title ideas is essential</p>
-                            <a href="#" class="boxed-btn3">Learn More
-                            </a>
-                        </div>
+   <div class="slider_area">
+    <div class="single_slider d-flex align-items-center slider_bg_1 overlay2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="slider_text">
+                        <span>আজই শুরু করুন</span>
+                        <h3> শিশুদের সাহায্য করুন <br>
+                            যখন তাদের সবচেয়ে প্রয়োজন</h3>
+                        <p>এখনই সময় সহানুভূতির হাত বাড়িয়ে দেওয়ার। <br>
+                           আপনার সাহায্য একটি জীবনের পরিবর্তন ঘটাতে পারে।</p>
+                        <a href="#" class="boxed-btn3">আরও জানুন</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     {{-- End of image slider --}}
 
     <!-- counter_area_start  -->
@@ -219,6 +219,39 @@
         </div>
     </div>
     <!-- counter_area_end  -->
+      <!-- counter_area_start  -->
+<div class="container">
+    <div class="row container">
+        <div class="col-12">
+            <h2 class="text-center mt-3" style="color: black;">আমাদের প্রকল্প সম্পর্কে</h2>
+            <p class="mt-3" style="color: black;">
+                এই চ্যারিটি সিস্টেমটি পলাশতলী গ্রামে শুরু হওয়া একটি মহৎ সামাজিক উদ্যোগ, যার লক্ষ্য সমাজের পিছিয়ে পড়া ও অসহায় মানুষদের পাশে দাঁড়ানো।
+            </p>
+            <p style="color: black;">
+                আমাদের কার্যক্রমের মধ্যে রয়েছে খাদ্য বিতরণ, পুরাতন ও নতুন কাপড় বিতরণ, বিনামূল্যে চিকিৎসা সহায়তা, শিক্ষা উপকরণ সরবরাহ এবং স্বাস্থ্য সচেতনতা কার্যক্রম পরিচালনা।
+            </p>
+            <p style="color: black;">
+                চ্যারিটি সিস্টেমে রয়েছে বিভিন্ন দানের ধরণ যেমন: খাদ্য, কাপড়, ওষুধ, শিক্ষা, স্বাস্থ্য, সমাজকল্যাণ ইত্যাদি। দাতারা সহজেই তাদের পছন্দ অনুযায়ী যে কোনো খাতে অনুদান দিতে পারেন।
+            </p>
+            <p style="color: black;">
+                আমাদের ব্লগ বিভাগে নিয়মিত সমাজসেবামূলক তথ্য, ঘটনার বিবরণ, এবং জনসচেতনতা বৃদ্ধির মতো বিষয়বস্তু প্রকাশ করা হয় যা মানুষকে উৎসাহিত করে সমাজের জন্য কিছু করতে।
+            </p>
+            <p style="color: black;">
+                আমরা স্বেচ্ছাসেবক নিবন্ধনের সুযোগ দিয়েছি, যেখানে যেকেউ স্বেচ্ছায় আমাদের সঙ্গে যুক্ত হয়ে কাজ করতে পারেন। এতে একদিকে সমাজের উপকার হয়, অন্যদিকে তরুণদের ভেতরে মানবিক মূল্যবোধ গড়ে ওঠে।
+            </p>
+            <p style="color: black;">
+                ভবিষ্যতে আমাদের লক্ষ্য আরও গ্রাম ও অঞ্চলজুড়ে এই সেবা সম্প্রসারণ করা যাতে বাংলাদেশের প্রত্যন্ত অঞ্চলের মানুষও এই সুবিধা পেতে পারে।
+            </p>
+            <p style="color: black;">
+                এই প্রকল্প সম্পূর্ণভাবে মানুষের সহানুভূতি, ভালোবাসা ও দায়িত্ববোধের উপর ভিত্তি করে পরিচালিত হয়। আমরা বিশ্বাস করি, সমাজের সকল শ্রেণির মানুষের সম্মিলিত প্রচেষ্টায় একটি সুন্দর ও মানবিক সমাজ গড়ে তোলা সম্ভব।
+            </p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- counter_area_end  -->
+
 
     {{-- body --}}
    <div class="container-fluid mt-5 mb-5 bg-indigo-100">
@@ -280,92 +313,91 @@
 </div>
 
 
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <img src="{{ asset('img/support.png')}}" alt="">
-            </div>
-            <div class="col-md-6">
-                <div class="mt-4 ml-4">
-                    <div class="vl bg-success"></div>
-                    <p class="fw-bold fs-1">Helping others is the </p>
-                    <p class="fw-bold fs-1">way of help ourselves</p>
-                    <div class="mt-5">
-                        <p class="fw-light fs-4">
-                            The purpose of life is not to be happy. It is to be useful, to be honorable, to be
-                            compassionate, to have it make some difference that you have lived and lived well.
-                        </p>
-                    </div>
-                    <div class="my-5">
-                        <a href="#" class="btn btn-success text-gray-900">Our Impact</a>
-                    </div>
+   <div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <img src="{{ asset('img/support.png')}}" alt="সহায়তা ছবি">
+        </div>
+        <div class="col-md-6">
+            <div class="mt-4 ml-4">
+                <div class="vl bg-success"></div>
+                <p class="fw-bold fs-1">অন্যদের সাহায্য করা</p>
+                <p class="fw-bold fs-1">আসলে নিজেকেই সাহায্য করা</p>
+                <div class="mt-5">
+                    <p class="fw-light fs-4">
+                        জীবনের উদ্দেশ্য শুধুমাত্র সুখী হওয়া নয়। বরং উপকারে আসা, সৎ হওয়া, সহানুভূতিশীল হওয়া এবং
+                        এমন কিছু করা যার মাধ্যমে বোঝা যায় আপনি ভালোভাবে বেঁচে ছিলেন এবং সমাজে কিছু অবদান রেখেছেন।
+                    </p>
+                </div>
+                <div class="my-5">
+                    <a href="#" class="btn btn-success text-gray-900">আমাদের প্রভাব</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <!-- reson_area_start  -->
-    <div class="reson_area section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-55">
-                        <h3><span>Reason of Helping</span></h3>
+   <div class="reson_area section_padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section_title text-center mb-55">
+                    <h3><span>সহযোগিতার কারণ</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Fund Collection -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single_reson">
+                    <div class="thum">
+                        <div class="thum_1">
+                            <img src="img/help/1.png" alt="তহবিল সংগ্রহ">
+                        </div>
+                    </div>
+                    <div class="help_content">
+                        <h4>তহবিল সংগ্রহ</h4>
+                        <p>গরীব, অসহায় ও দুস্থ মানুষের পাশে দাঁড়াতে আমরা নিয়মিতভাবে তহবিল সংগ্রহ করি। এই তহবিল দিয়ে খাবার, কাপড়, ওষুধ এবং শিক্ষাসামগ্রী সরবরাহ করা হয়।</p>
+                        <a href="#" class="read_more">বিস্তারিত দেখুন</a>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_reson">
-                        <div class="thum">
-                            <div class="thum_1">
-                                <img src="img/help/1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="help_content">
-                            <h4>Collecting Fund</h4>
-                            <p>Lorem ipsum, or lipsum as it is
-                                sometimes known, is dummy
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
+            <!-- Blood Camp -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single_reson">
+                    <div class="thum">
+                        <div class="thum_1">
+                            <img src="img/help/2.png" alt="রক্তদান ক্যাম্প">
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_reson">
-                        <div class="thum">
-                            <div class="thum_1">
-                                <img src="img/help/2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="help_content">
-                            <h4>Blood Camp</h4>
-                            <p>Lorem ipsum, or lipsum as it is
-                                sometimes known, is dummy
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
-                        </div>
+                    <div class="help_content">
+                        <h4>রক্তদান ক্যাম্প</h4>
+                        <p>জরুরি সময় ও দুর্ঘটনার মুহূর্তে রক্তের প্রয়োজন মেটাতে আমরা রক্তদান ক্যাম্প আয়োজন করি। এতে বহু জীবন বাঁচানো সম্ভব হয়।</p>
+                        <a href="#" class="read_more">বিস্তারিত দেখুন</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_reson">
-                        <div class="thum">
-                            <div class="thum_1">
-                                <img src="img/help/3.png" alt="">
-                            </div>
+            </div>
+            <!-- Friendly Volunteer -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single_reson">
+                    <div class="thum">
+                        <div class="thum_1">
+                            <img src="img/help/3.png" alt="বন্ধুসুলভ স্বেচ্ছাসেবক">
                         </div>
-                        <div class="help_content">
-                            <h4>Friendly Volunteer</h4>
-                            <p>Lorem ipsum, or lipsum as it is
-                                sometimes known, is dummy
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
-                        </div>
+                    </div>
+                    <div class="help_content">
+                        <h4>বন্ধুসুলভ স্বেচ্ছাসেবক</h4>
+                        <p>আমাদের স্বেচ্ছাসেবকরা আন্তরিকভাবে কাজ করেন সমাজে ইতিবাচক প্রভাব ফেলতে। তারা সময়, শ্রম ও ভালোবাসা দিয়ে মানুষের মুখে হাসি ফোটায়।</p>
+                        <a href="#" class="read_more">বিস্তারিত দেখুন</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- reson_area_end  -->
 
     {{-- Sponser Ship --}}
