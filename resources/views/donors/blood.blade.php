@@ -31,8 +31,8 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-users"></i>Md Juwe</a></li>
-                                <li><a href="#"> <i class="fa fa-envelope"></i>juwelmd416@gmail.com</a></li>
+                                    <li><a href="#"> <i class="fa fa-users"></i>Sajedul Islam</a></li>
+                                <li><a href="#"> <i class="fa fa-envelope"></i>sajedulkhairul@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{url('/')}}">
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -80,7 +80,7 @@
                             <div class="main-menu">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="{{url('/')}}">Home</a></li>
                                         <li><a href="About.html">Blog</a></li>
                                         <li><a href="#">Donations<i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
@@ -130,147 +130,158 @@
         </div>
     </div>
      --}}
-     <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center blood_bg_img overlay2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="slider_text ">
-                            <span>Get Started Today.</span>
-                            <h3> Help the children
-                                When They Need</h3>
-                            <p>With so much to consume and such little time, coming up <br>
-                                with relevant title ideas is essential</p>
-                            <a href="#" class="boxed-btn3">Learn More
-                            </a>
-                        </div>
+<div class="slider_area">
+    <div class="single_slider d-flex align-items-center blood_bg_img overlay2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="slider_text">
+                        <span>রক্ত নয়, আপনি দিচ্ছেন জীবনের নতুন সুযোগ</span>
+                        <h3> যখন প্রয়োজন রক্তের,<br> আপনি হতে পারেন একজন বীর</h3>
+                        <p>একটি ব্যাগ রক্ত দিতে হয়তো আপনার কিছু সময় লাগবে,<br> কিন্তু এটি কারো পুরো জীবন বাঁচাতে পারে।</p>
+                        <a href="#" class="boxed-btn3">আরও জানুন</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     {{-- End of Image Slider --}}
 
-    <div class="container-fluid">
-        <div class="row my-5 p-5">
-            <div class="col-md-6 ">
-                <h1 class="text-size">Donate Blood</h1>
-                <p class="fw-light fs-5">
-                    Blood donation for transfusion is a vital step in the management of many clinical problems, with the two primary indications being anemia and acute blood loss. Blood donation itself is also used to primarily treat a small subset of medical conditions. At the beginning of the 20th century, Karl Landsteiner identified ABO blood groups, at which time blood typing of individuals was only beginning to be adopted as a universally standard practice.[2] Due to the inability to prevent blood from clotting once removed from the donor and thus store and transfer blood to be delivered when needed later, transfusions were only carried out on a limited basis. Blood was transfused directly from donor to recipient without intervening storage or transport. This method worked for small numbers of patients and only on a small scale, as donors and recipients needed to be connected both in time and space. There was a time when lists of donors were maintained of persons locally available to be called in to donate to patients at any time as needed. Necessity drove the development of more flexible donation and storage practices when World War I began. "On-demand" blood donation was not feasible for such a large scale effort. Soldiers were dying of otherwise non-fatal wounds due mainly to the inability to perform a timely blood transfusion. 
-                </p>
-            </div>
-            <div class="col-md-6">
-                <img src="img/blood_blog.jpg" alt="">
-            </div>
+   <div class="container-fluid">
+    <div class="row my-5 p-5">
+        <div class="col-md-6">
+            <h1 class="text-size">মানুষের পাশে দাঁড়ান, রক্ত দিয়ে ভালোবাসা ছড়ান</h1>
+
+            <p class="fw-light fs-5">
+                রক্তদান শুধু একটি মানবিক দায়িত্ব নয়, এটি জীবন রক্ষার এক অপরিহার্য উপায়। দুর্ঘটনা, অস্ত্রোপচার, ক্যানসার, থ্যালাসেমিয়া, ডেঙ্গু সহ নানা জটিল রোগে আক্রান্ত রোগীদের রক্ত প্রয়োজন হয়। আপনি যে রক্ত দান করেন, সেটি কোনো মেশিন দিয়ে তৈরি করা যায় না—এটা শুধু একজন মানুষই দিতে পারে আর একজন মানুষকে।
+            </p>
+
+            <p class="fw-light fs-5">
+                ২০শতকের শুরুতে কার্ল ল্যান্ডস্টাইনার যখন এ, বি, ও রক্তের গ্রুপ আবিষ্কার করেন, তখনই আধুনিক রক্ত সঞ্চালনের ভিত্তি তৈরি হয়। সেই সময় রক্তকে সংরক্ষণ করার উপায় ছিল না, তাই রক্তদাতা ও গ্রহীতাকে একই সময়ে একত্রে থাকা লাগত। ফলে রক্তদান ছিল সীমিত এবং জটিল।
+            </p>
+
+            <p class="fw-light fs-5">
+                বিশ্বযুদ্ধের সময় যখন বহু সৈনিক রক্তপাতজনিত কারণে প্রাণ হারাচ্ছিল, তখনই আরও উন্নত রক্ত সংরক্ষণ এবং সরবরাহ ব্যবস্থার প্রয়োজনীয়তা দেখা দেয়। এই চাহিদা থেকেই বিকশিত হয় আধুনিক ব্লাড ব্যাংকিং পদ্ধতি।
+            </p>
+
+            <p class="fw-light fs-5">
+                আজকের দিনে, নিয়মিত রক্তদানের মাধ্যমে হাজারো প্রাণ বাঁচানো সম্ভব। প্রতি ৪ সেকেন্ডে একজন মানুষ রক্তের অপেক্ষায় থাকে। আপনি যদি সুস্থ থাকেন এবং বয়স ১৮ থেকে ৬০ বছরের মধ্যে হয়, তাহলে আপনি রক্তদান করতে পারেন। এটি আপনার স্বাস্থ্যেরও উপকারে আসে—রক্ত সঞ্চালন ভালো হয়, হৃদযন্ত্র সুস্থ থাকে এবং মনেও আসে এক প্রশান্তি।
+            </p>
+
+            <p class="fw-light fs-5 text-success">
+                একটি ব্যাগ রক্ত কোনো কিছুর চেয়ে দামি নয়—এটি একটি নতুন জীবন।
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="img/blood_blog.jpg" alt="রক্তদান সচেতনতা" class="img-fluid rounded shadow">
         </div>
     </div>
+</div>
 
-    <div class="container-fluid mb-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark text-white">
-                    <img class="card-img img_opacity" src="{{ asset('img/blood_form.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay">
-                        <div class="row d-flex justify-content-center">
-                            <form action="" method="POST">
-                                @csrf
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-sm-6">
-                                        <label for="firstName" class="form-label">First Name: </label>
-                                        <input type="text" name="firstName" class="form-control">
-                                </div>
-    
-                                <div class="col-sm-6">
-                                    <label for="lastName" class="form-label">Last Name: </label>
-                                        <input type="text" name="lastName" class="form-control">
-                                </div>
-                                </div>
-                            
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="mobilePhone" class="form-label">Mobile Phone: </label>
-                                        <input type="text" name="mobilePhone" class="form-control">
-                                </div>
-                            </div>
 
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="email" class="form-label">E-mail: </label>
-                                        <input type="email" name="email" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="town" class="form-label">Town: </label>
-                                        <input type="text" name="town" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="state" class="form-label">State: </label>
-                                        <input type="text" name="state" class="form-control">
-                                </div>
-                                <div class="col-sm-12">
-                                    <label for="postCode" class="form-label">Post Code: </label>
-                                        <input type="text" name="postCode" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="clinic" class="form-label">Name Your Clinic: </label>
-                                        <input type="text" name="clinic" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="selectTime" class="form-label">Select Your Time: </label>
-                                        <input type="time" name="selectTime" class="form-control" id="email">
-                                </div>
-                                <div class="col-sm-12">
-                                    <label for="postCode" class="form-label">Select Your Date: </label>
-                                        <input type="date" name="selectDate" class="form-control" id="email">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="postCode" class="form-label">Any Messages?  </label>
-                                        <textarea name="description" class="form-control" id="description" cols="78" rows="3"></textarea><br>
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <select class="custom-select form-control" name="bloodGroup">
-                                        <option selected>Select Your Blood Group</option>
-                                        <option value="A+">A+</option>
-                                        <option value="AB+">AB+</option>
-                                        <option value="A-">A-</option>
-                                        <option value="AB-">AB-</option>
-                                        <option value="B+">B+</option>
-                                        <option value="B-">B-</option>
-                                        <option value="O+">O+</option>
-                                        <option value="O-">O-</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col my-3 p-2 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-success">Donate</button>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container my-5">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-success text-white text-center py-4 rounded-top">
+        
+      <h3>Blood Donation Form</h3>
+    </div>
+    <div class="card-body">
+      <form action="" method="POST" novalidate>
+        @csrf
+        
+        <!-- Name Fields -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label fw-semibold">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label fw-semibold">Last Name</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Doe" required>
+          </div>
         </div>
+
+        <!-- Contact Info -->
+        <div class="mb-3">
+          <label for="mobilePhone" class="form-label fw-semibold">Mobile Phone</label>
+          <input type="tel" id="mobilePhone" name="mobilePhone" class="form-control" placeholder="+123 456 7890" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">E-mail</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="example@mail.com" required>
+        </div>
+
+        <!-- Location -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="town" class="form-label fw-semibold">Town</label>
+            <input type="text" id="town" name="town" class="form-control" placeholder="Town Name">
+          </div>
+          <div class="col-md-6">
+            <label for="state" class="form-label fw-semibold">State</label>
+            <input type="text" id="state" name="state" class="form-control" placeholder="State Name">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="postCode" class="form-label fw-semibold">Post Code</label>
+          <input type="text" id="postCode" name="postCode" class="form-control" placeholder="12345">
+        </div>
+
+        <div class="mb-3">
+          <label for="clinic" class="form-label fw-semibold">Name Your Clinic</label>
+          <input type="text" id="clinic" name="clinic" class="form-control" placeholder="Clinic Name">
+        </div>
+
+        <!-- Date & Time -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="selectTime" class="form-label fw-semibold">Select Your Time</label>
+            <input type="time" id="selectTime" name="selectTime" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="selectDate" class="form-label fw-semibold">Select Your Date</label>
+            <input type="date" id="selectDate" name="selectDate" class="form-control">
+          </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="mb-3">
+          <label for="description" class="form-label fw-semibold">Any Messages?</label>
+          <textarea id="description" name="description" rows="3" class="form-control" placeholder="Write any additional info here..."></textarea>
+        </div>
+
+        <!-- Blood Group -->
+        <div class="mb-4">
+          <label for="bloodGroup" class="form-label fw-semibold">Select Your Blood Group</label>
+          <select id="bloodGroup" name="bloodGroup" class="form-select" required>
+            <option value="" disabled selected>Select Your Blood Group</option>
+            <option value="A+">A+</option>
+            <option value="AB+">AB+</option>
+            <option value="A-">A-</option>
+            <option value="AB-">AB-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+      
+        <div class="d-flex justify-content-center mt-5">
+            <button type="submit" class="btn btn-success px-5 py-2 fs-5">Submit Donation</button>
+        </div>
+
+      </form>
     </div>
-    </div>
+  </div>
+</div>
+
+
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('js/vendor/modernizr-3.5.0.min.js')}}"></script>

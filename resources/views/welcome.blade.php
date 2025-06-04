@@ -102,7 +102,7 @@
                         <div class="main-menu">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="{{url('/')}}">Home</a></li>
                                     <li><a href="{{url('blog')}}">Blog</a></li>
                                     <li><a href="#">Donations<i class="ti-angle-down"></i></a>
                                         <ul class="submenu">
@@ -514,34 +514,29 @@
     {{-- End of Home Blog --}}
 
     <!-- latest_activites_area_start  -->
-    <div class="latest_activites_area">
-        <div class=" video_bg_1 video_activite  d-flex align-items-center justify-content-center">
-            <a class="popup-video" href="https://www.youtube.com/watch?v=MG3jGHnBVQs">
-                <i class="flaticon-ui"></i>
-            </a>
-        </div>
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-lg-7">
-                    <div class="activites_info">
-                        <div class="section_title">
-                            <h3> <span>Watch Our Latest </span><br>
-                                Activities</h3>
-                        </div>
-                        <p class="para_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
-                            eiusmod tempor incididunt ut labore dolore magna aliqua.
-                            enim minim veniam, quis nostrud exercitation.</p class="para_1">
-                        <p class="para_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
-                            eiusmod tempor incididunt ut labore dolore magna aliqua.
-                            enim minim veniam, quis nostrud exercitation. tempor
-                            incididunt ut labore dolore magna aliqua. enim minim
-                            veniam, quis nostrud exercitation.</p>
-                        <a href="{{url('makeDonation')}}" class="boxed-btn4">Donate Now</a>
+   <div class="latest_activites_area">
+    <div class="video_bg_1 video_activite d-flex align-items-center justify-content-center">
+        <a class="popup-video" href="https://www.youtube.com/watch?v=MG3jGHnBVQs">
+            <i class="flaticon-ui"></i>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-7">
+                <div class="activites_info">
+                    <div class="section_title">
+                        <h3> <span>আমাদের সাম্প্রতিক</span><br>
+                            কার্যক্রম দেখুন</h3>
                     </div>
+                    <p class="para_1">আমরা প্রতিনিয়ত চেষ্টা করে যাচ্ছি অভুক্ত ও দরিদ্র মানুষের মুখে খাবার তুলে দিতে। আমাদের এই উদ্যোগে আপনিও হতে পারেন অংশীদার।</p>
+                    <p class="para_2">প্রতিদিন হাজারো মানুষ না খেয়ে ঘুমায়। আপনার ছোট একটি সহায়তা হতে পারে তাদের জীবনে একটুখানি স্বস্তির নিশ্বাস। আসুন, একসাথে ক্ষুধামুক্ত একটি সমাজ গড়ে তুলি।</p>
+                    <a href="{{url('makeDonation')}}" class="boxed-btn4">এখনই দান করুন</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- latest_activites_area_end  -->
 
     <!-- popular_causes_area_start  -->
@@ -704,52 +699,48 @@
     <!-- news__area_end  -->
 
     {{-- Sign Up to Hear from us --}}
-    <div class="container-fluid bg-green-300">
+ <div class="container my-5">
+    <div class="p-5  bg-light bg-opacity-10 rounded shadow-sm">
         <div class="row">
-            <div class="col my-5">
-                <div class="vl bg-success"></div>
-                <h2 class="fw-bold fs-1 mx-5 my-5">Sign Up to Hear from us</h2>
-                <p class="fw-bold fs-6 my-4">Sign up here to receive our quarterly newsletter via email.</p>
-                <div class="row">
-                    <div class="col-sm-2">
-                        <form action="" method="POST">
-                            @csrf
-                            <div class="mb-3">
-                                <input type="text" name="subFirst" placeholder="First Name" class="form-control"
-                                    id="first_name">
-                                <label for="first_name" class="form-label">First Name: </label>
-                            </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="mb-3">
-                            <input type="text" name="subLast" placeholder="Last Name" class="form-control"
-                                id="first_name">
-                            <label for="first_name" class="form-label">Last Name: </label>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="mb-3">
-                            <input type="email" name="subEmail" placeholder="example@mail.com" class="form-control"
-                                id="first_name">
-                            <label for="first_name" class="form-label">E-mail: </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-success text-dark" style="width: 18rem">Sign
-                                in</button>
-                        </div>
-                    </div>
-                    </form>
-                    @if (session()->has('message'))
-                    <div class="alert alert-success mt-4">
-                        {{session('message')}}
-                    </div>
-                    @endif
-                </div>
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <h2 class="fw-bold mb-3">Subscribe to Our Newsletter</h2>
+                <p class="text-muted mb-4">Stay informed with our quarterly updates on events, activities, and opportunities to make an impact.</p>
             </div>
         </div>
+
+        <form method="POST" action="" class="row g-3 justify-content-center mt-4">
+            @csrf
+
+            <div class="col-md-3">
+                <label for="first_name" class="form-label">First Name</label>
+                <input type="text" name="subFirst" class="form-control" id="first_name" placeholder="Your first name">
+            </div>
+
+            <div class="col-md-3">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input type="text" name="subLast" class="form-control" id="last_name" placeholder="Your last name">
+            </div>
+
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" name="subEmail" class="form-control" id="email" placeholder="example@mail.com">
+            </div>
+
+            <div class="col-12 text-center mt-3">
+                <button type="submit" class="btn btn-success px-5 py-2 fw-bold">Subscribe</button>
+            </div>
+
+            @if (session()->has('message'))
+            <div class="col-12">
+                <div class="alert alert-success text-center mt-3">
+                    {{ session('message') }}
+                </div>
+            </div>
+            @endif
+        </form>
     </div>
+</div>
+
     {{-- end of sign-up --}}
 
     <!-- footer_start  -->

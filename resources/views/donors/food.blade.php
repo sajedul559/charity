@@ -30,8 +30,8 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-user"></i> Md Juwel</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>juwelmd416@gmail.com</a></li>
+                                    <li><a href="#"> <i class="fa fa-user"></i> Sajedul Islam</a></li>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i>sajedulkhairul@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{url('/')}}">
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -79,7 +79,7 @@
                             <div class="main-menu">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="{{url('/')}}">Home</a></li>
                                         <li><a href="About.html">Blog</a></li>
                                         <li><a href="#">Donations<i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
@@ -121,165 +121,156 @@
     </header>
 
     {{-- image slideer --}}
-
-    <div class="slider_area">
-        <div class="single_slider  d-flex align-items-center food_bg_img overlay2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="slider_text ">
-                            <span>Get Started Today.</span>
-                            <h3> Help the children
-                                When They Need</h3>
-                            <p>With so much to consume and such little time, coming up <br>
-                                with relevant title ideas is essential</p>
-                            <a href="#" class="boxed-btn3">Learn More
-                            </a>
-                        </div>
+<div class="slider_area">
+    <div class="single_slider d-flex align-items-center food_bg_img overlay2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="slider_text">
+                        <span>ক্ষুধা নয়, হোক ভালোবাসা।</span>
+                        <h3> ক্ষুধার্ত মানুষদের <br>খাবার দিন ভালোবাসায়</h3>
+                        <p>একটি খাবার অনেক কিছু বদলে দিতে পারে। <br>
+                            আপনার সাহায্যে কেউ পাবে নতুন আশার আলো।</p>
+                        <a href="#" class="boxed-btn3">আরও জানুন</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container-fluid">
-        <div class="row bg-green-200 my-5 p-5">
-            <div class="col-md-6 ">
-                <h1 class="text-size">Donate Food</h1>
-                <p class="fw-light fs-5">How swiftly the world market for food can change could be observed in the
-                    mid-2000s. For two decades, leading up to the millennium, global demand for food had increased
-                    steadily, along with growth in the world’s population, record harvests, new technologies,
-                    improvements in incomes, and the diversification of diets. Food prices continued to decline through
-                    2000. However, in 2004, prices for most grains began to rise. Rising production could not keep pace
-                    with the even stronger growth in demand. Food stocks became depleted. And then, in 2005, food supply
-                    was squeezed by disappointing harvests in major food-producing countries. By 2006, world cereal
-                    production had fallen by 2.1 per cent. In 2007, rapid increases in oil prices increased fertilizer
-                    and other food production costs.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <img src="img/hunger.jpg" alt="">
-            </div>
+
+
+   <div class="container-fluid">
+    <div class="row bg-green-200 my-5 p-5">
+        <div class="col-md-6">
+            <h1 class="text-size">একটি খাবার, একটি জীবন – খাদ্য দানে আপনার সহায়তা দিন</h1>
+            <p class="fw-light fs-5">
+                বিশ্ব বাজারে খাদ্যের চাহিদা কত দ্রুত পরিবর্তিত হতে পারে, তা ২০০০ দশকের মাঝামাঝি সময়ে স্পষ্টভাবে দেখা গেছে। দুই দশক ধরে, বিশ্ব জনসংখ্যা বৃদ্ধি, রেকর্ড পরিমাণ ফসল উৎপাদন, নতুন প্রযুক্তি, আয় বৃদ্ধি এবং খাদ্যাভ্যাসে বৈচিত্র্যতা বৃদ্ধির কারণে বিশ্বব্যাপী খাদ্যের চাহিদা ক্রমাগত বেড়েছে। </p>
+                 
+
+            <p class="fw-light fs-5">
+                বিশ্বব্যাপী লাখ লাখ মানুষ প্রতিদিন না খেয়ে থাকে। খাদ্য হচ্ছে একটি মৌলিক অধিকার, তবুও দারিদ্র্য, দুর্যোগ এবং অর্থনৈতিক বৈষম্যের কারণে অনেকে সেই অধিকার থেকে বঞ্চিত। আমাদের একটু সহানুভূতি এবং সাহায্য তাদের জীবনে বিশাল পরিবর্তন আনতে পারে।
+            </p>
+            <p class="fw-light fs-5">
+                বিশ্বব্যাপী লাখ লাখ মানুষ প্রতিদিন না খেয়ে থাকে। খাদ্য হচ্ছে একটি মৌলিক অধিকার, তবুও দারিদ্র্য, দুর্যোগ এবং অর্থনৈতিক বৈষম্যের কারণে অনেকে সেই অধিকার থেকে বঞ্চিত। আমাদের একটু সহানুভূতি এবং সাহায্য তাদের জীবনে বিশাল পরিবর্তন আনতে পারে।
+            </p>
+            <p class="fw-light fs-5">
+                ২০০০ সালের পর থেকে বৈশ্বিক খাদ্য পরিস্থিতি অনেক দ্রুত পরিবর্তন হয়েছে। শস্য উৎপাদনের হার চাহিদার সঙ্গে তাল মেলাতে পারেনি। ২০০৫ সালের পর হতাশাজনক ফসল এবং তেলের দাম বৃদ্ধির কারণে খাদ্য উৎপাদনের খরচ অনেক বেড়ে যায়। এর ফলে দরিদ্র মানুষদের জন্য ন্যূনতম খাদ্য নিশ্চিত করাও কঠিন হয়ে দাঁড়ায়।
+            </p>
+            <p class="fw-light fs-5">
+                আমরা বিশ্বাস করি, একসাথে চেষ্টা করলে ক্ষুধার বিরুদ্ধে জয় সম্ভব। আপনি যদি একটি খাবার দান করেন, কেউ হয়তো একটি দিন বাঁচার সুযোগ পাবে। আমরা আপনাকে আহ্বান জানাই—এগিয়ে আসুন, দান করুন এবং একটি পরিবর্তনের অংশ হোন।
+            </p>
+            <p class="fw-light fs-5 text-success">
+                "একজন ক্ষুধার্ত মানুষের মুখে হাসি ফোটানোই সবচেয়ে বড় মানবতা।"
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="img/hunger.jpg" alt="খাদ্য সংকট">
         </div>
     </div>
+</div>
 
-    <div class="container-fluid d-flex justify-content-center bg-green-200 my-5 p-5">
-        <div class="row ">
-            <div class="col">
-                <form action="" method="POST">
-                    @csrf 
-                    <h2 class="fw-bold fs-4 mb-2">Please Select Your Distric To Donate</h2>
-                    <div class="form-check-inline">
-                        <input type="checkbox" class="form-check-input" name="category[]" value="Dhaka">
-                        <label class="form-check-label">Dhaka</label>
-                    </div>
-                    <div class="form-check-inline">
-                        <input type="checkbox" class="form-check-input" name="category[]" value="Chittagong">
-                        <label class="form-check-label">Chittagong</label>
-                    </div>
-                    <div class="form-check-inline">
-                        <input type="checkbox" class="form-check-input" name="category[]" value="Rajshahi">
-                        <label class="form-check-label">Rajshahi</label>
-                    </div>
-                    <div class="form-check-inline">
-                        <input type="checkbox" class="form-check-input" name="category[]" value="Sylhet">
-                        <label class="form-check-label">Sylhet</label>
-                    </div>
-                    <div class="form-check-inline">
-                        <input type="checkbox" class="form-check-input" name="category[]" value="Barishal">
-                        <label class="form-check-label">Barishal</label>
-                    </div>
-                    <div class="form-check-inline">
-                        <input type="checkbox" class="form-check-input" name="category[]" value="Khulna">
-                        <label class="form-check-label">Khulna</label>
-                    </div>
-                    <div class="form-check-inline">
-                        <input type="checkbox" class="form-check-input" name="category[]" value="Moyamensing">
-                        <label class="form-check-label">Moyamensing</label>
-                    </div>
 
-                <div class="row my-4 d-flex justify-content-center">
-                    <div class="col-sm-6">
-                        <label class="form-label">First Name: </label>
-                            <input type="text" name="firstName" class="form-control">
-                    </div>
-                
-                    <div class="col-sm-6">
-                        <label class="form-label">Last Name: </label>
-                            <input type="text" name="lastName" class="form-control">
-                    </div>
-                </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <label class="form-label">Mobile Phone: </label>
-                                <input type="text" name="mobilePhone" class="form-control" ">
-                        </div>
-                    </div>
+<div class="container my-5">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-success text-white text-center py-4 rounded-top">
+            <h3>District Donation Form</h3>
+        </div>
+        <div class="card-body">
+            <form action="" method="POST" novalidate>
+                @csrf
 
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <label class="form-label">E-mail: </label>
-                                <input type="email" name="email" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <label class="form-label">Town: </label>
-                                <input type="text" name="town" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <label class="form-label">State: </label>
-                                <input type="text" name="state" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <label class="form-label">Post Code: </label>
-                                <input type="text" name="postCode" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <label class="form-label">Headline:  </label>
-                                <input type="text" name="heading" class="form-control">
-                        </div>
-                    </div>                    
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <label class="form-label">Description:  </label>
-                                <textarea name="description" class="form-control"  cols="78" rows="10"></textarea>
-                                <br>
-                        </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-12">
-                            <select class="custom-select form-control" name="selectMethod">
-                                <option selected>Select Method</option>
-                                <option value="Home">Home</option>
-                                <option value="Resturant">Resturant</option>
-                                <option value="Convention">Convention</option>
-                            </select>
-                        </div>
-                    </div>
-
+                <!-- District Selection -->
+                <div class="mb-4">
+                    <label class="form-label fw-semibold d-block mb-2">Select District(s):</label>
                     <div class="row">
-                        <div class="col my-2 p-3 d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary">Donate</button>
-                        </div>
+                        @foreach (['Dhaka', 'Chittagong', 'Rajshahi', 'Sylhet', 'Barishal', 'Khulna', 'Moyamensing'] as $district)
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="category[]" value="{{ $district }}" id="district_{{ $district }}">
+                                    <label class="form-check-label" for="district_{{ $district }}">
+                                        {{ $district }}
+                                    </label>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
-                </form>
-            </div>
+
+                <!-- Name Fields -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label fw-semibold">First Name</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter first name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label fw-semibold">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter last name">
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="mb-3">
+                    <label for="mobilePhone" class="form-label fw-semibold">Mobile Phone</label>
+                    <input type="text" id="mobilePhone" name="mobilePhone" class="form-control" placeholder="e.g. 01XXXXXXXXX">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com">
+                </div>
+
+                <!-- Location Info -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="town" class="form-label fw-semibold">Town</label>
+                        <input type="text" id="town" name="town" class="form-control" placeholder="Enter town">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="state" class="form-label fw-semibold">State</label>
+                        <input type="text" id="state" name="state" class="form-control" placeholder="Enter state">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="postCode" class="form-label fw-semibold">Post Code</label>
+                    <input type="text" id="postCode" name="postCode" class="form-control" placeholder="Enter post code">
+                </div>
+
+                <!-- Headline -->
+                <div class="mb-3">
+                    <label for="heading" class="form-label fw-semibold">Headline</label>
+                    <input type="text" id="heading" name="heading" class="form-control" placeholder="Enter a short headline">
+                </div>
+
+                <!-- Description -->
+                <div class="mb-3">
+                    <label for="description" class="form-label fw-semibold">Description</label>
+                    <textarea id="description" name="description" class="form-control" rows="4" placeholder="Describe your donation or purpose..."></textarea>
+                </div>
+
+                <!-- Method Selection -->
+                <div class="mb-4">
+                    <label for="selectMethod" class="form-label fw-semibold">Select Method</label>
+                    <select id="selectMethod" name="selectMethod" class="form-select">
+                        <option value="">-- Select Method --</option>
+                        <option value="Home">Home</option>
+                        <option value="Resturant">Restaurant</option>
+                        <option value="Convention">Convention</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-success px-5 py-2 fs-5">Donate</button>
+                </div>
+            </form>
         </div>
-        </div>
+    </div>
+</div>
+
+
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('js/vendor/modernizr-3.5.0.min.js')}}"></script>

@@ -31,8 +31,8 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-user"></i> Md Juwel</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>juwelmd416@gmail.com</a></li>
+                                    <li><a href="#"> <i class="fa fa-user"></i> Sajedul Islam</a></li>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i>sajedulkhairul@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{url('/')}}">
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -80,7 +80,7 @@
                             <div class="main-menu">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="{{url('/')}}">Home</a></li>
                                         <li><a href="About.html">Blog</a></li>
                                         <li><a href="#">Donations<i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
@@ -131,169 +131,134 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row my-5 p-5">
-            <div class="col-md-6 ">
-                <h1 class="text-size">Donate Cloth</h1>
-                <p class="fw-light fs-5">
-                    One of the most important reasons to donate clothes is how many people it helps. It helps those who
-                    can’t afford clothes, disaster victims, veterans, and even people with diseases. When you donate to
-                    a charity that not only brings the clothes to a thrift shop but then turns that clothing donation
-                    into a monetary donation, you’re helping a wide array of people in need.
+<div class="container-fluid bg-light py-5">
+    <div class="row align-items-center">
+        <!-- Text Section -->
+        <div class="col-md-6 px-5">
+            <h1 class="display-5 fw-bold text-success mb-4">পরিচ্ছন্ন হৃদয়ের প্রতিচ্ছবি – পুরনো কাপড়, নতুন আশার আলো</h1>
+            <p class="fs-5 text-secondary">
+                আপনার অপ্রয়োজনীয় কাপড় হতে পারে কারো জীবনের প্রয়োজনীয় চাহিদা। আমাদের সমাজে এখনো অনেক মানুষ আছেন,
+                যারা শীতকালে একটি উষ্ণ কাপড়ের জন্য কষ্ট করেন বা যারা প্রতিদিনের ব্যবহারের জন্য কাপড়ের অভাবে ভোগেন।<br><br>
 
-                    When you key in on all the different people that your donations help, then that’s an easy way to
-                    showcase the power of generosity and giving.
+                কাপড় দান করলে আপনি শুধু একটি জিনিসই দিচ্ছেন না—আপনি দিচ্ছেন আত্মবিশ্বাস, দিচ্ছেন মর্যাদা, দিচ্ছেন
+                বেঁচে থাকার সাহস। এটি সাহায্য করে অসহায় মানুষ, পথশিশু, যুদ্ধাহত মুক্তিযোদ্ধা কিংবা প্রাকৃতিক দুর্যোগে
+                ক্ষতিগ্রস্ত পরিবারের পাশে দাঁড়াতে।<br><br>
 
-                    <br><br>
-                    Lastly—and this is a big one—donating helps build a vital trait in all people in helping them to
-                    become more generous. Rather than living a selfish life, people who donate clothes are taking steps
-                    to become less selfish and more keyed in on growing and improving their generous nature. It’s a
-                    trait that everyone should have and should work to grow—no matter how old they are.
+                আপনার একটি ছোট পদক্ষেপ কাউকে এনে দিতে পারে বিশাল স্বস্তি। দান করা শিখায় উদারতা, ভালোবাসা ও মানবিকতা।
+                এই মানবিক গুণগুলো আমাদের সমাজকে করে তোলে আরও সুন্দর ও সহানুভূতিশীল।
+                <strong>আপনিও এগিয়ে আসুন—পুরনো কাপড় দিন, নতুন আশার আলো জ্বালান!</strong>
+            </p>
+        </div>
 
-                    If you want to start donating more clothes and living generously, make sure that you’re donating to
-                    a reputable organization. GreenDrop partners with four different charitable organizations that focus
-                    on helping others. When you schedule a clothes donation with us, you know it’s going to make a
-                    difference. Schedule a pick-up now!
-                </p>
-            </div>
-            <div class="col-md-6">
-                <img src="img/cloth_blog.jpg" alt="">
-            </div>
+        <!-- Image Section -->
+        <div class="col-md-6 text-center">
+            <img src="img/cloth_blog.jpg" alt="Donate Cloth" class="img-fluid rounded shadow-sm" style="max-height: 500px;">
         </div>
     </div>
-
-    <div class="container-fluid mb-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark">
-                    {{-- <img class="card-img img_opacity" src="{{ asset('img/cloth_form.jpg')}}" alt="Card image"> --}}
-                    <div class="card-img-overlay">
-                        <div class="row d-flex justify-content-center my-3">
-                            <div class="col-sm-6 fw-light fs-5 bg-info border border-info py-3">
-                                <h2>Donor Information: </h2>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <form action="" method="POST">
-                                @csrf
-                                <div class="d-flex justify-content-center">
-                                    <div class="col-sm-6">
-                                        <label for="firstName" class="form-label">First Name: </label>
-                                        <input type="text" name="firstName" class="form-control">
-                                    </div>
-    
-                                <div class="col-sm-6">
-                                    <label for="lastName" class="form-label">Last Name: </label>
-                                        <input type="text" name="lastName" class="form-control" id="lastName">
-                                </div>
-                                </div>                 
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-
-                                    <label for="mobilePhone" class="form-label">Mobile Phone: </label>
-                                        <input type="text" name="mobilePhone" class="form-control" id="mobilePhone">
-
-                                </div>
-                            </div>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="email" class="form-label">E-mail: </label>
-                                        <input type="email" name="email" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-
-                                    <label for="town" class="form-label">Town: </label>
-                                        <input type="text" name="town" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                    <label for="state" class="form-label">State: </label>
-                                        <input type="text" name="state" class="form-control">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="postCode" class="form-label">Post Code: </label>
-                                        <input type="text" name="postCode" class="form-control">
-                                </div>
-                            </div>
+</div>
 
 
-                            <br>
-                            <div class="row d-flex justify-content-center my-3">
-                                <div class="col-sm-12 fw-light fs-5 bg-info border border-info py-3">
-                                    <h2>Cloth Information: </h2>
-                                </div>
-                            </div>
+<div class="container my-5">
+    <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-header bg-success text-white text-center py-4 rounded-top-4">
+            <h2 class="mb-0">কাপড় দান ফর্ম (Cloth Donation Form)</h2>
+        </div>
+        <div class="card-body bg-light px-5 py-4">
+            <form action="" method="POST">
+                @csrf
 
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                        <h2 class="fw-bold fs-4 mb-2">Please Select Your Cloth Types: </h2>
-                                        <div class="form-check-inline">
-                                            <label class="form-check-label" for="exampleCheck1">Male</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label class="form-check-label" for="exampleCheck1">Female</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label class="form-check-label" for="exampleCheck1">Kids</label>
-                                        </div>
-                                        <div class="form-check-inline">
-                                            <label class="form-check-label" for="exampleCheck1">Old</label>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <input type="text" name="checkBox" class="form-control"><br>
-                                        </div>
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                        <input type="text" name="size" class="form-control">
-                                        <label for="town" class="form-label">Size: </label>
-                                </div>
-                                <div class="col-sm-6">
-                                        <input type="text" name="quantity" class="form-control">
-                                        <label for="town" class="form-label">Quantity: </label>
-                                </div>
-                            </div>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                        <input type="text" name="location" class="form-control">
-                                        <label for="town" class="form-label">Location: </label>
-                                </div>
-                                <div class="col-sm-6">
-                                        <input type="text" name="colthName" class="form-control">
-                                        <label for="town" class="form-label">Cloth Name: </label>
-                                </div>
-                            </div>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                        <input type="text" name="status" class="form-control">
-                                        <label for="town" class="form-label">Status: </label>
-                                </div>
-                                <div class="col-sm-6">
-                                        <input type="text" name="comment" class="form-control">
-                                        <label for="town" class="form-label">Comment: </label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col my-1 p-2 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-info">Donate</button>
-                                </div>
-                            </div>
-                            </form>
-                        </div>
-
+                <!-- Donor Information -->
+                <h4 class="text-primary mb-3">🧍‍♂️ Donor Information</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter First Name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter Last Name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="mobilePhone" class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" name="mobilePhone" id="mobilePhone" placeholder="01XXXXXXXXX">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="example@email.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="town" class="form-label">Town</label>
+                        <input type="text" class="form-control" name="town" id="town" placeholder="Enter Town">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" name="state" id="state" placeholder="Enter State">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="postCode" class="form-label">Post Code</label>
+                        <input type="text" class="form-control" name="postCode" id="postCode" placeholder="Postal Code">
                     </div>
                 </div>
-            </div>
+
+                <!-- Cloth Information -->
+                <hr class="my-4">
+                <h4 class="text-primary mb-3">👕 Cloth Information</h4>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label class="form-label d-block">Select Cloth Type</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="clothType[]" value="Male" id="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="clothType[]" value="Female" id="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="clothType[]" value="Kids" id="kids">
+                            <label class="form-check-label" for="kids">Kids</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="clothType[]" value="Old" id="old">
+                            <label class="form-check-label" for="old">Old</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="colthName" class="form-label">Cloth Name</label>
+                        <input type="text" class="form-control" name="colthName" id="colthName" placeholder="e.g. T-shirt, Saree">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="size" class="form-label">Size</label>
+                        <input type="text" class="form-control" name="size" id="size" placeholder="e.g. S, M, L, XL">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Number of clothes">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="location" class="form-label">Drop-off/Pick-up Location</label>
+                        <input type="text" class="form-control" name="location" id="location" placeholder="Enter Address">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="status" class="form-label">Condition/Status</label>
+                        <input type="text" class="form-control" name="status" id="status" placeholder="New/Used/Good Condition">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="comment" class="form-label">Comment (Optional)</label>
+                        <textarea class="form-control" name="comment" id="comment" rows="2" placeholder="Any extra information"></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success px-4 py-2">📦 Submit Donation</button>
+                </div>
+            </form>
         </div>
     </div>
-    </div>
-    </div>
+</div>
+
 
     
     <script src="{{asset('js/app.js')}}"></script>

@@ -32,8 +32,8 @@
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
                                 <ul>
-                                    <li><a href="#"> <i class="fa fa-user"></i> Md Juwel</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>juwelmd416@gmail.com</a></li>
+                                    <li><a href="#"> <i class="fa fa-user"></i>Sajedul Islam</a></li>
+                                    <li><a href="#"> <i class="fa fa-envelope"></i>sajedulkhairul@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="{{url('/')}}">
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
@@ -81,7 +81,7 @@
                             <div class="main-menu">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="{{url('/')}}">Home</a></li>
                                         <li><a href="About.html">Blog</a></li>
                                         <li><a href="#">Donations<i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
@@ -134,153 +134,124 @@
 
     <div class="container-fluid">
         <div class="row my-5 p-5">
-            <div class="col-md-6 ">
-                <h1 class="text-size">Donate Medicine</h1>
+            <div class="col-md-6">
+                <h1 class="text-size">ওষুধ দিন, জীবন ফিরে দিন</h1>
                 <p class="fw-light fs-5">
-                    Global inequities in health systems mean that many low and middle income countries experience shortages of necessary medicines and medical supplies. These disparities are sometimes remedied through donations made by external governments, pharmaceutical companies or non-government organizations (NGOs) to countries1 or to individual health facilities.2 Donations of medical aid may occur during emergency situations or as part of long-term programs, such as those targeting neglected tropical diseases (NTDs).
-                    <br><br>
-                    Medicine and medical device donation programs have the potential to improve access to healthcare in some of the poorest parts of the world2 when done well, such as medicine donations made following the 2001 earthquake in Gujarat, India, or Merck’s Ivermectin donation program.4 However, badly executed donations can cause harm and burden recipient countries.4 For example, inappropriate and excessive medicine donations made to Bosnia and Herzegovina from 1992 to 1996 resulted in estimated disposal costs of US$34 million, and were reported to include surplus medical supplies from World War II.
+                    বিশ্বের অনেক দেশেই, বিশেষ করে নিম্ন ও মধ্যম আয়ের দেশগুলোতে, প্রয়োজনীয় ওষুধ ও চিকিৎসা সরঞ্জামের চরম সংকট দেখা যায়। এই সংকট কখনো কখনো সরকার, ফার্মাসিউটিক্যাল কোম্পানি কিংবা বেসরকারি সংগঠনের (NGO) ওষুধ দানের মাধ্যমে কিছুটা লাঘব হয়।
+                </p>
+                <p class="fw-light fs-5">
+                    অনেক সময় জরুরি মুহূর্তে যেমন ভূমিকম্প, বন্যা বা যুদ্ধপরিস্থিতিতে ওষুধ দানই হয়ে ওঠে সবচেয়ে প্রয়োজনীয় সহায়তা। আবার কিছু দীর্ঘমেয়াদী স্বাস্থ্য কর্মসূচির অংশ হিসেবেও ওষুধ দান গুরুত্বপূর্ণ, যেমন অবহেলিত রোগ প্রতিরোধ কর্মসূচি।
+                </p>
+                <p class="fw-light fs-5">
+                    ভালোভাবে পরিচালিত ওষুধ দান কর্মসূচি দরিদ্র জনগোষ্ঠীর জন্য স্বাস্থ্যসেবার দুয়ার খুলে দেয়। যেমন—২০০১ সালে গুজরাট ভূমিকম্পের পর বা মের্ক কোম্পানির আইভারমেকটিন দান কর্মসূচি। তবে অপরিকল্পিত বা অনুপযুক্ত ওষুধ দান বিপরীত প্রভাব ফেলতে পারে। অতিরিক্ত বা মেয়াদোত্তীর্ণ ওষুধ দানের ফলে যেমন ক্ষতি হয়, তেমনি সংরক্ষণ ও নিষ্পত্তির খরচও বেড়ে যায়।
+                </p>
+                <p class="fw-light fs-5">
+                    তাই আসুন, সচেতনভাবে এবং দায়িত্ব নিয়ে প্রয়োজনীয় ও কার্যকর ওষুধ দান করি—যা হবে সত্যিকারের জীবন রক্ষার হাতিয়ার।
                 </p>
             </div>
             <div class="col-md-6">
-                <img src="img/medicine_blog.jpg" alt="">
+                <img src="img/medicine_blog.jpg" alt="ওষুধ দান">
             </div>
         </div>
     </div>
 
-    <div class="container-fluid mb-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card text-white">
-                    {{-- <img class="card-img img_opacity" src="{{ asset('img/medicine_form.jpg')}}" alt="Card image"> --}}
-                    <div class="card-img-overlay">
-                        <div class="row d-flex justify-content-center my-3">
-                            <div class="col-sm-6 fw-light fs-5 bg-success border border-success py-3">
-                                <h2>Donor Information: </h2>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <form action="" method="POST">
-                                @csrf
-                                <div class="d-flex justify-content-center">
-                                    <div class="col-sm-6">
-                                        <label for="firstName" class="form-label">First Name: </label>
-                                        <input type="text" name="firstName" class="form-control">
-                                </div>
-    
-                                <div class="col-sm-6">
-                                    <label for="lastName" class="form-label">Last Name: </label>
-                                        <input type="text" name="lastName" class="form-control">
-                                </div>
-                                </div>
-                        
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="mobilePhone" class="form-label">Mobile Phone: </label>
-                                        <input type="text" name="mobilePhone" class="form-control">
-                                </div>
-                            </div>
+<div class="container my-5">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-success text-white text-center py-4 rounded-top">
+            <h2 class="mb-0">Medicine Donation Form</h2>
+            <small>Your small help can save a life</small>
+        </div>
 
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="email" class="form-label">E-mail: </label>
-                                        <input type="email" name="email" class="form-control">
-                                </div>
-                            </div>
+        <div class="card-body px-5 py-4">
+            <form action="" method="POST">
+                @csrf
 
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="town" class="form-label">Town: </label>
-                                        <input type="text" name="town" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                    <label for="state" class="form-label">State: </label>
-                                        <input type="text" name="state" class="form-control">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="postCode" class="form-label">Post Code: </label>
-                                        <input type="text" name="postCode" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                    <label for="postCode" class="form-label">Select Your Time: </label>
-                                        <input type="time" name="selectTime" class="form-control">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="postCode" class="form-label">Select Your Date: </label>
-                                        <input type="date" name="selectDate" class="form-control">
-                                </div>
-                            </div>
-
-                            <br>
-                            <div class="row d-flex justify-content-center my-3">
-                                <div class="col-sm-6 fw-light text-center fs-5 bg-success border border-success border-radius-rounded py-3">
-                                    <h2 class="">Medicine  Info: </h2>
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-12">
-                                    <label for="town" class="form-label">Drug Name: </label>
-                                        <input type="text" name="drugName" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                    <label for="town" class="form-label">Lot Number(if avaiable): </label>
-                                        <input type="text" name="lotNumber" class="form-control">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="town" class="form-label">Expiration: </label>
-                                        <input type="text" name="expireTime" class="form-control">
-                                </div>
-                        
-                            </div>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                    <label for="town" class="form-label">Source: </label>
-                                        <input type="text" name="source" class="form-control">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="town" class="form-label">Quantity Remaining: </label>
-                                        <input type="text" name="quantity" class="form-control">
-                                </div>
-                                
-                            </div>
-
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                    <label for="town" class="form-label text-dark">NDC#: </label>
-                                        <input type="text" name="ndc" class="form-control">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="town" class="form-label text-dark">Drug Strength: </label>
-                                        <input type="text" name="drugStrength" class="form-control">
-                                </div>
-                                
-                            </div>
-
-                            <div class="row">
-                                <div class="col my-3 p-2 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-success">Donate</button>
-                                </div>
-                            </div>
-                            </form>
-                        </div>
-                        
-                        </div>
+                <!-- Donor Information -->
+                <h4 class="text-success mb-3">Donor Information</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" name="firstName" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" name="lastName" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="mobilePhone" class="form-label">Mobile Phone</label>
+                        <input type="text" name="mobilePhone" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="town" class="form-label">Town</label>
+                        <input type="text" name="town" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" name="state" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="postCode" class="form-label">Post Code</label>
+                        <input type="text" name="postCode" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="selectTime" class="form-label">Preferred Time</label>
+                        <input type="time" name="selectTime" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="selectDate" class="form-label">Preferred Date</label>
+                        <input type="date" name="selectDate" class="form-control">
                     </div>
                 </div>
-            </div>
+
+                <hr class="my-4">
+
+                <!-- Medicine Information -->
+                <h4 class="text-success mb-3">Medicine Information</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="drugName" class="form-label">Drug Name</label>
+                        <input type="text" name="drugName" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lotNumber" class="form-label">Lot Number (if available)</label>
+                        <input type="text" name="lotNumber" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="expireTime" class="form-label">Expiration Date</label>
+                        <input type="text" name="expireTime" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="source" class="form-label">Source</label>
+                        <input type="text" name="source" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="quantity" class="form-label">Quantity Remaining</label>
+                        <input type="text" name="quantity" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ndc" class="form-label">NDC#</label>
+                        <input type="text" name="ndc" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="drugStrength" class="form-label">Drug Strength</label>
+                        <input type="text" name="drugStrength" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn btn-success px-5 py-2 fs-5">Submit Donation</button>
+                </div>
+            </form>
         </div>
     </div>
-    </div>
+</div>
+
+ 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{asset('js/vendor/modernizr-3.5.0.min.js')}}"></script>
     <script src="{{asset('js/vendor/jquery-1.12.4.min.js')}}"></script>
