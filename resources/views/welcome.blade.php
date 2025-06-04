@@ -339,64 +339,46 @@
 
 
     <!-- reson_area_start  -->
-   <div class="reson_area section_padding">
+<div class="reson_area section_padding bg-light">
     <div class="container">
-        <div class="row justify-content-center">
+        <!-- Section Title -->
+        <div class="row justify-content-center mb-5">
             <div class="col-lg-6">
-                <div class="section_title text-center mb-55">
-                    <h3><span>সহযোগিতার কারণ</span></h3>
+                <div class="section_title text-center">
+                    <h3 class="fw-bold"><span>একতায় নতুন দিগন্ত</span></h3>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <!-- Fund Collection -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single_reson">
-                    <div class="thum">
-                        <div class="thum_1">
-                            <img src="img/help/1.png" alt="তহবিল সংগ্রহ">
+
+        <!-- Cards -->
+        <div class="row g-4 justify-content-center">
+            @foreach([
+                ['img' => '1.png', 'title' => 'তহবিল সংগ্রহ', 'desc' => 'গরীব, অসহায় ও দুস্থ মানুষের পাশে দাঁড়াতে আমরা নিয়মিতভাবে তহবিল সংগ্রহ করি। এই তহবিল দিয়ে খাবার, কাপড়, ওষুধ এবং শিক্ষাসামগ্রী সরবরাহ করা হয়।'],
+                ['img' => '2.png', 'title' => 'রক্তদান ক্যাম্প', 'desc' => 'জরুরি সময় ও দুর্ঘটনার মুহূর্তে রক্তের প্রয়োজন মেটাতে আমরা রক্তদান ক্যাম্প আয়োজন করি। এতে বহু জীবন বাঁচানো সম্ভব হয়।'],
+                ['img' => '3.png', 'title' => 'বন্ধুসুলভ স্বেচ্ছাসেবক', 'desc' => 'আমাদের স্বেচ্ছাসেবকরা আন্তরিকভাবে কাজ করেন সমাজে ইতিবাচক প্রভাব ফেলতে। তারা সময়, শ্রম ও ভালোবাসা দিয়ে মানুষের মুখে হাসি ফোটায়।']
+            ] as $item)
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 text-center p-4 bg-white rounded-4">
+                        <div class="mb-3">
+                            <img 
+                                src="{{ asset('img/help/' . $item['img']) }}" 
+                                alt="{{ $item['title'] }}" 
+                                class="img-fluid rounded-circle border border-3 border-primary shadow mx-auto d-block"
+                                style="width: 130px; height: 130px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold mb-3">{{ $item['title'] }}</h5>
+                            <p class="card-text text-muted mb-3">{{ $item['desc'] }}</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">বিস্তারিত দেখুন</a>
                         </div>
                     </div>
-                    <div class="help_content">
-                        <h4>তহবিল সংগ্রহ</h4>
-                        <p>গরীব, অসহায় ও দুস্থ মানুষের পাশে দাঁড়াতে আমরা নিয়মিতভাবে তহবিল সংগ্রহ করি। এই তহবিল দিয়ে খাবার, কাপড়, ওষুধ এবং শিক্ষাসামগ্রী সরবরাহ করা হয়।</p>
-                        <a href="#" class="read_more">বিস্তারিত দেখুন</a>
-                    </div>
                 </div>
-            </div>
-            <!-- Blood Camp -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single_reson">
-                    <div class="thum">
-                        <div class="thum_1">
-                            <img src="img/help/2.png" alt="রক্তদান ক্যাম্প">
-                        </div>
-                    </div>
-                    <div class="help_content">
-                        <h4>রক্তদান ক্যাম্প</h4>
-                        <p>জরুরি সময় ও দুর্ঘটনার মুহূর্তে রক্তের প্রয়োজন মেটাতে আমরা রক্তদান ক্যাম্প আয়োজন করি। এতে বহু জীবন বাঁচানো সম্ভব হয়।</p>
-                        <a href="#" class="read_more">বিস্তারিত দেখুন</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Friendly Volunteer -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single_reson">
-                    <div class="thum">
-                        <div class="thum_1">
-                            <img src="img/help/3.png" alt="বন্ধুসুলভ স্বেচ্ছাসেবক">
-                        </div>
-                    </div>
-                    <div class="help_content">
-                        <h4>বন্ধুসুলভ স্বেচ্ছাসেবক</h4>
-                        <p>আমাদের স্বেচ্ছাসেবকরা আন্তরিকভাবে কাজ করেন সমাজে ইতিবাচক প্রভাব ফেলতে। তারা সময়, শ্রম ও ভালোবাসা দিয়ে মানুষের মুখে হাসি ফোটায়।</p>
-                        <a href="#" class="read_more">বিস্তারিত দেখুন</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
+
+
 
     <!-- reson_area_end  -->
 
@@ -453,96 +435,82 @@
             </div>
         </div>
     </div> --}}
-    <div class="container-fluid mb-5">
+<div class="container-fluid mb-5">
     <div class="row">
         <div class="col-12">
-            <div class="card bg-dark text-white">
-                <img class="card-img img_opacity" src="{{ asset('img/Sponsr.jpg')}}" alt="Card image">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
-                    <p class="card-text sponsr_text text-gray-900 fs-2 fw-bold mt-5">Supported People</p>
-                    <p class="card-text text-dark fw-light fs-5 px-3">
-                        There is nothing more beautiful than someone who goes out of their way to make life beautiful for others
-                    </p>
+            <div class="card border-0 bg-dark text-white position-relative overflow-hidden">
 
-                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 mt-4">
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/spn1.png" class="card-img-top" alt="Sponsor 1">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/spn2.png" class="card-img-top" alt="Sponsor 2">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/spn3.png" class="card-img-top" alt="Sponsor 3">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/spn4.png" class="card-img-top" alt="Sponsor 4">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/spn5.png" class="card-img-top" alt="Sponsor 5">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <img src="img/spn5.png" class="card-img-top" alt="Sponsor 6">
-                            </div>
+                <!-- Background Image Layer -->
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 1;">
+                    <img src="{{ asset('img/Sponsr.jpg') }}" alt="Background" class="w-100 h-100" style="object-fit: cover; opacity: 0.3;">
+                </div>
+
+                <!-- Overlay Content -->
+                <div class="position-relative z-2 text-center px-3 py-5">
+                    <div class="container">
+                        <!-- Title -->
+                        <h2 class="fw-bold text-white mb-3 fs-4 fs-md-2">যাঁরা আমাদের পাশে ছিলেন</h2>
+                        <p class="text-light fs-6 mb-4">
+                            একজন মানুষ সবচেয়ে সুন্দর তখনই হয়, যখন সে অন্যের জীবনে আলো ছড়িয়ে দেয়।
+                        </p>
+
+                        <!-- Sponsor Image Grid -->
+                        <div class="row g-3 justify-content-center">
+                            @foreach (['spn1.png', 'spn2.png', 'spn3.png', 'spn4.png', 'spn5.png', 'spn5.png'] as $img)
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center mb-1">
+                                    <div class="bg-white rounded shadow-sm p-2 w-100 text-center" style="height: 100px;">
+                                        <img src="{{ asset('img/' . $img) }}" class="img-fluid h-100" style="max-height: 80px; object-fit: contain;" alt="Sponsor">
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </div>
 
 
+
+
+
     {{-- Home Blog --}}
-    <div class="container my-5  ">
-        <div class="row">
+   <div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mt-4 ml-4">
+                <div class="vl bg-success"></div>
+                <p class="fw-bold fs-1"><b>আমাদের উদ্যোগ সম্পর্কে জানুন</b></p>
+                <div class="mt-5">
+                    <p class="fw-light fs-6 text-left">
+                        আমরা গরীব ও অসহায় মানুষের পাশে দাঁড়িয়ে তাদের জীবন মানোন্নয়নে কাজ করে যাচ্ছি।
+                        খাদ্য, বস্ত্র, ওষুধ এবং শিক্ষা সামগ্রী সরবরাহের মাধ্যমে তাদের প্রতিদিনের চ্যালেঞ্জ কমাতে সহায়তা করি।
+                    </p>
 
-            <div class="col-md-6">
-                <div class="mt-4 ml-4">
-                    <div class="vl bg-success"></div>
-                    <p class="fw-bold fs-1">Find in our Blog </p>
-                    <div class="mt-5">
-                        <p class="fw-light fs-6 text-left">
-                            It may be a platform for fundraising rather than a charity in its own right, but
-                            dealing with thousands of causes daily, Just Giving’s blog is a wealth of
-                            information and inspiration. For anyone considering launching a fundraising
-                            campaign, Just Giving‘s posts are full of ideas and tip to help you maximise the
-                            amount you raise. For everyone else, the blog is full of great stories and
-                            initiatives worth knowing about.
-                        </p>
+                    <p class="fw-light fs-6 text-left">
+                        আমাদের স্বেচ্ছাসেবকরা মানবতার সেবায় নিবেদিতপ্রাণ, যারা ভালোবাসা ও শ্রম দিয়ে সমাজে ইতিবাচক পরিবর্তন আনছেন।
+                        আমরা নিয়মিত রক্তদান ক্যাম্প, তহবিল সংগ্রহ এবং জরুরি সাহায্য কর্মসূচি পরিচালনা করি,
+                        যা বহু জীবন রক্ষায় সহায়ক হয়েছে।
+                    </p>
 
-                        <p class="fw-light fs-6 text-left">
-                            With so much bad news in the world today, from global disasters to national budget
-                            cuts, sometimes it’s good to be reminded that not everything out there is terrible.
-                            In fact, there’s a lot going on across the globe and country which is truly great –
-                            but receives little attention.
-                            To help you look on the brighter side, and to inspire you to “be the change you want
-                            to see”, we’ve collected five of our very favourite charity blogs.
-                            <br>
-                            From national charities with very specific causes, to larger initiatives with
-                            broader intentions.
-                        </p>
-                    </div>
-                    <div class="my-5">
-                        <a href="#" class="btn btn-success text-gray-900">Read More</a>
-                    </div>
+                    <p class="fw-light fs-6 text-left">
+                        আপনাদের সহযোগিতা ও দানে আমরা আরও বড় মাত্রায় কাজ করতে সক্ষম হবো,
+                        তাই আমাদের সাথে যুক্ত হয়ে এই মহৎ যাত্রায় অংশ নিন এবং অন্যদের জীবনে আলোর আলো ছড়ান।
+                    </p>
+                </div>
+                <div class="my-5">
+                    <a href="#" class="btn btn-success text-gray-900">আরো জানুন</a>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="{{ asset('img/blog.png')}}" alt="">
-            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="{{ asset('img/blog.png')}}" alt="আমাদের উদ্যোগ">
         </div>
     </div>
+</div>
+
     {{-- End of Home Blog --}}
 
     <!-- latest_activites_area_start  -->
